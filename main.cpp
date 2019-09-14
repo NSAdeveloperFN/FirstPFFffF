@@ -22,6 +22,7 @@ private:
 
 class matrix;
 
+
 int main()
 {
     cout << "Hello User!\n"
@@ -31,8 +32,25 @@ int main()
 	munit u(n);
 	cout << "\nYep ur matrix unit is " << u.ret() << endl;
 	cout << "\nLet's get started!" << endl;
+	//
+	//Start UX
 
+	//Making
 	char o = 0;
+	while (1)
+	{
+		int n = 0;
+		int n1 = 0;
+		cout << "Size of ur matrix is ";
+		cin >> n;
+		cout << 'x' << endl;
+		cin >> n1;
+
+		cout << endl;
+	}
+
+	//Operations
+	o = 0;
 	while (o != 'q')
 	{
 		cout << endl << "q to quit\nn to negative" << endl << "Operation: ";
@@ -46,7 +64,11 @@ int main()
 			break;
 		}
 	}
+	//End UX
+	//
 	cout << "\nYep ur matrix unit is " << u.ret() << endl;
+	cout << "\nCongretulations!!!" << endl << endl;
+	cout << "Anime art( is missing((((" << endl;
 	return 0;
 }
 
@@ -55,3 +77,5 @@ void munit::make_n()
 	pnum = num;
 	num = 0-num;
 }
+
+//Until it's my max(((
